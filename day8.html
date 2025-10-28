@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Fonts Pre Connect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            color: black;
+            margin: 0;
+        }
+        
+        .contain {
+            width: 420px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        
+        .top_search {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .invide {
+            justify-content: center;
+            align-items: end;
+            text-align: right;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            height: 40px;
+        }
+        
+        .search-in-bar {
+            position: relative;
+            width: 100%;
+        }
+        
+        .search {
+            width: 100%;
+            height: 40px;
+            padding-right: 100px;
+            border: 1px solid #ccc;
+            background-color: rgb(206, 205, 205);
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .search-button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 30px;
+            padding: 0 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+        
+        .genral {
+            display: block;
+            align-items: center;
+        }
+        
+        .genral h2 {
+            font-size: 12px;
+            color: rgba(179, 179, 179, 0.662);
+        }
+        
+        .acess {
+            display: flex;
+            align-items: center;
+        }
+        
+        .acess-img {
+            width: 50px;
+            height: 40px;
+            background-color: rgb(71, 71, 71);
+        }
+        
+        .acess-img2 {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(71, 71, 71);
+            border-radius: 50px;
+        }
+        
+        .genral-text {
+            display: block;
+            padding: 10px;
+        }
+        
+        .genral-h1 {
+            font-size: 18px;
+        }
+        
+        .genral-p {
+            font-size: 14px;
+            color: #76767694;
+            margin: -10px 0 0 0;
+        }
+        
+        .right-access {
+            align-items: center;
+        }
+        
+        .right-aces-buton {
+            flex: 1;
+            text-align: right;
+            justify-content: right;
+            height: 30px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .aces-close {
+            background-color: rgb(255, 140, 0);
+            border-radius: 20px;
+            text-align: right;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        
+        .aces-close:hover {
+            opacity: 1;
+            transition: 0.5s;
+        }
+        
+        .pepole-h1 {
+            font-size: 12px;
+            color: rgba(179, 179, 179, 0.662);
+        }
+        
+        .foter {
+            display: flex;
+            align-items: center;
+        }
+        
+        .foter-url {
+            font-size: 13px;
+            color: #666;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 8px;
+        }
+        
+        .foter-button {
+            height: 36px;
+            border-radius: 20px;
+            padding: 0 14px;
+            font-size: 13px;
+            border: none;
+            background-color: #898989;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    </style>
+    <!-- Title -->
+    <title>Text</title>
+</head>
+
+<body>
+    <section class="contain">
+        <div class="top_search">
+            <div class="search-in-bar">
+                <input type="search" required alt="Search" placeholder="Email, name......" class="search" id="serch">
+                <button type="button " class="search-button">Can View 🔽</button>
+            </div>
+            <button type="submit" class="invide" onclick="test()">Invite</button>
+        </div>
+        <hr>
+        <div class="genral">
+            <h2>Genral access</h2>
+            <div class="acess">
+                <img src="./png-clipart-default-profile-united-states-computer-icons-desktop-free-high-quality-person-icon-miscellaneous-silhouette.png" class="acess-img">
+                <div class="genral-text">
+                    <h1 class="genral-h1">Only those invited</h1>
+                    <p class="genral-p">4 people</p>
+                </div>
+            </div>
+            <div class="acess">
+                <img src="./gratis-png-logo-de-steam-iconos-de-computadora-comparten-iconos-compartiendo-graficos-escalables-compartiendo-archivos-compartiendo-compartiendo-icono-de-redes-sociales-thumbnail.png" class="acess-img2">
+                <div class="genral-text">
+                    <h1 class="genral-h1">Link access</h1>
+                    <p class="genral-p">Only users have shared the link</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="people">
+            <h2 class="pepole-h1">People with access</h2>
+
+            <div class="acess" id="s">
+                <img src="./Zi - Copy.png" class="acess-img2">
+                <div class="genral-text">
+                    <h1 class="genral-h1">Ziad Waleed</h1>
+                    <p class="genral-p">Zi@Esco.com</p>
+                </div>
+                <button type="button" class="right-aces-buton">cen edit  🔽</button>
+                <button class="aces-close" id="d">X</button>
+            </div>
+            <div class="acess" id="ss">
+                <img src="./Zi - Copy.png" class="acess-img2">
+                <div class="genral-text">
+                    <h1 class="genral-h1">ESCOPAR</h1>
+                    <p class="genral-p">Zi@Esco.com</p>
+                </div>
+                <button type="button" class="right-aces-buton">cen edit  🔽</button>
+                <button class="aces-close" id="dd">X</button>
+            </div>
+            <div class="acess" id="sss">
+                <img src="./Zi - Copy.png" class="acess-img2">
+                <div class="genral-text">
+                    <h1 class="genral-h1">Abnoub </h1>
+                    <p class="genral-p">AR@gmail.com</p>
+                </div>
+                <button type="button" class="right-aces-buton">cen edit  🔽</button>
+                <button class="aces-close" id="ddd">X</button>
+            </div>
+
+        </div>
+        <hr>
+        <div class="foter">
+            <p class="foter-url"> https://<span id="name"></span>.com/fiule/z331nH</p>
+
+            <button type="button" class="foter-button">📎 Copy Link</button>
+        </div>
+    </section>
+    <script>
+        let inp = document.getElementById("serch");
+        let add = document.getElementById("name");
+
+        function test() {
+            add.innerHTML = `${inp.value}`
+        }
+    </script>
+    <script>
+        let btn1 = document.getElementById("d");
+        let btn2 = document.getElementById("dd");
+        let btn3 = document.getElementById("ddd");
+        btn2.addEventListener("click", function() {
+            ss.style.display = "none";
+        })
+        btn3.addEventListener("click", function() {
+            sss.style.display = "none";
+        })
+        btn1.addEventListener("click", function() {
+            s.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
